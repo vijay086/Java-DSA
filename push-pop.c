@@ -1,8 +1,9 @@
 #include<stdio.h>
-#include<stdlib.h>
+#include<stdlib.h> // Include this header for the exit() function
 
+#define MAX 5
 
-int [a], top = -1;
+int a[MAX], top = -1;
 
 void push();
 void pop();
@@ -42,7 +43,7 @@ int main() {
 
 void push() {
     int data;
-    if (top == n - 1) {
+    if (top == MAX - 1) {
         printf("\nOverflow or Stack is full\n");
     } else {
         printf("Enter Element to be Pushed: ");
